@@ -1,0 +1,31 @@
+#app{
+    margin: 0 auto;
+}
+#div-sez-download{
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70vw;
+}
+#div-download{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 30vw;
+}
+button{
+    height: 5vw;
+    width: fit-content;
+    padding: 2vh;
+    color: white;
+    border: none;
+    border-radius: 3vh;
+    background-color: rgb(71, 71, 255);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(104, 104, 255);
+    text-decoration: underline;
+}
