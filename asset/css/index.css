@@ -38,6 +38,7 @@ body {
     justify-content: space-evenly;
     margin: 0 auto;
     width: 30vw;
+    margin-top: 5vh;
 }
 #btnDownload{
     height: 5vw;
