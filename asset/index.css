@@ -1,11 +1,36 @@
+@font-face {
+  font-family: 'DreamsSpace';
+  src: url('/asset/fonts/DREAMS.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+}
+
+body {
+  background-image: url("/asset/sfondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'DreamsSpace', sans-serif;
+  color: white;
+}
 #app{
     margin: 0 auto;
+    
+}
+#title{
+    text-align: center;
+    margin-top: 2vh;
 }
 #div-sez-download{
     display:flex;
     flex-direction: column;
     margin: 0 auto;
     width: 70vw;
+    font-size: 1vh;
+    margin-top: 10vh;
 }
 #div-download{
     display: flex;
