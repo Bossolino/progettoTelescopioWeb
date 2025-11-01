@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'DreamsSpace';
-  src: url('asset/fonts/DREAMS.ttf') format('truetype');
+  src: url('/asset/fonts/DREAMS.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   letter-spacing: 2px;
@@ -39,7 +39,7 @@ body {
     margin: 0 auto;
     width: 30vw;
 }
-button{
+#btnDownload{
     height: 5vw;
     width: fit-content;
     padding: 2vh;
@@ -47,10 +47,20 @@ button{
     border: none;
     border-radius: 3vh;
     background-color: rgb(71, 71, 255);
+    font-family: 'DreamsSpace', sans-serif;
+    font-size: 0.5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-
 button:hover{
     cursor: pointer;
     background-color: rgb(104, 104, 255);
     text-decoration: underline;
 }
+
+.download-icon {
+  color: white;
+  cursor: pointer;
+}
+
