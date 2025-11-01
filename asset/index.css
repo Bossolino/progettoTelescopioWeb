@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'DreamsSpace';
-  src: url('/asset/fonts/DREAMS.ttf') format('truetype');
+  src: url('asset/fonts/DREAMS.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   letter-spacing: 2px;
@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url("/asset/sfondo.png");
+  background-image: url("asset/sfondo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
