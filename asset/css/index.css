@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url("asset/sfondo.png");
+  background-image: url("/asset/images/sfondo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
