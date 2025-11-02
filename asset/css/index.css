@@ -54,6 +54,8 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 0.5vh;
+    justify-content: space-evenly;
 }
 button:hover{
     cursor: pointer;
