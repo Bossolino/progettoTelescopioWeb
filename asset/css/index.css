@@ -39,6 +39,7 @@ body {
     margin: 0 auto;
     width: 30vw;
     margin-top: 5vh;
+    justify-content: space-evenly;
 }
 button{
     height: 5vw;
@@ -63,5 +64,6 @@ button:hover{
 .download-icon, .document-icon {
   color: white;
   cursor: pointer;
+
 }
 
