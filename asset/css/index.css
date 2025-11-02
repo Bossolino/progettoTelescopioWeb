@@ -1,71 +1,122 @@
+/* ===== Font ===== */
 @font-face {
-  font-family: 'DreamsSpace';
-  src: url('../fonts/DREAMS.ttf') format('truetype');
+  font-family: 'SpaceAge';
+  src: url('../fonts/space-age.regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  letter-spacing: 2px;
-  word-spacing: 6px;
+  letter-spacing: 0.05em;   /* ridotto per mobile */
+  word-spacing: 0.1em;      /* ridotto per mobile */
 }
 
+/* ===== Stile globale ===== */
 body {
   background-image: url("../images/sfondo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  font-family: 'DreamsSpace', sans-serif;
+  background-attachment: scroll;   /* no fixed su mobile */
+  font-family: 'SpaceAge', sans-serif;
   color: white;
+  font-size: 1rem;                 /* dimensione base leggibile */
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
-#app{
-    margin: 0 auto;
-    
+
+#app {
+  margin: 0 auto;
+  width: 100%;
 }
-#title{
-    text-align: center;
-    margin-top: 2vh;
+
+#title {
+  text-align: center;
+  margin-top: 2vh;
+  font-size: 2.5rem; 
 }
-#div-sez-download{
-    display:flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 70vw;
-    font-size: 1vh;
-    margin-top: 10vh;
+
+#div-sez-download {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  text-align: center;
 }
-#div-download{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    width: 30vw;
-    margin-top: 5vh;
-    justify-content: space-evenly;
+
+#div-download {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 100%;
 }
-button{
-    height: 5vw;
-    width: fit-content;
-    padding: 2vh;
-    color: white;
-    border: none;
-    border-radius: 3vh;
-    background-color: rgb(71, 71, 255);
-    font-family: 'DreamsSpace', sans-serif;
-    font-size: 0.5vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5vh;
-    justify-content: space-evenly;
+
+button {
+  height: auto;
+  width: fit-content;
+  padding: 1vh 2vh;
+  color: white;
+  border: none;
+  border-radius: 1vh;
+  background-color: rgb(71, 71, 255);
+  font-family: 'SpaceAge', sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5vh;
+  /* justify-content: space-between; */
 }
-button:hover{
-    cursor: pointer;
-    background-color: rgb(104, 104, 255);
-    text-decoration: underline;
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(104, 104, 255);
+  text-decoration: underline;
 }
 
 .download-icon, .document-icon {
   color: white;
   cursor: pointer;
-
 }
 
+/* ===== Media query mobile ===== */
+@media (max-width: 600px) {
+  html, body {
+    overflow-x: hidden;   /* evita scroll orizzontale */
+    overflow-y: auto;     /* scroll verticale abilitato */
+    max-width: 100%;
+    min-height: 100vh; 
+  }
+
+  body {
+    font-size: 1.5rem;
+    text-wrap: wrap;
+  }
+
+  #app {
+    width: 95%;
+    margin: 0 auto;
+    min-height: 100%;
+  }
+
+  #title {
+    font-size: 2rem;
+    margin-top: 3vh;
+  }
+
+  #div-sez-download {
+    width: 90%;
+    font-size: 1rem;
+    margin-top: 5vh;
+  }
+  button{
+    font-size: 1em;
+  }
+
+  #div-download {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100
+  }
+}
