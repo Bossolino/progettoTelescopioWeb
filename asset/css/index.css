@@ -40,7 +40,7 @@ body {
     width: 30vw;
     margin-top: 5vh;
 }
-.btn{
+button{
     height: 5vw;
     width: fit-content;
     padding: 2vh;
