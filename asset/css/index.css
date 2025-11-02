@@ -60,7 +60,7 @@ button:hover{
     text-decoration: underline;
 }
 
-.download-icon {
+.download-icon, .document-icon {
   color: white;
   cursor: pointer;
 }
